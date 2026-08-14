@@ -229,7 +229,6 @@ closeHis.addEventListener("click", () => {
 });
 
 document.querySelector("body").addEventListener("keydown", (e) => {
-  console.log(e.key);
   if (isRunning) {
     if (e.key === "j" || e.key === "J") {
       clearInterval(intervelId);
