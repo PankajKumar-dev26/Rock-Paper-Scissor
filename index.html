@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="rules">
+      <button class="close-rule-box">+</button>
+
+      <h3>GUIDE 📝</h3>
+
+      <div class="container-rule hidden">
+        <ul>
+          <li><strong>P</strong> — Play Paper</li>
+          <li><strong>R</strong> — Play Rock</li>
+          <li><strong>S</strong> — Play Scissors</li>
+          <li><strong>Backspace</strong> — Reset the Game</li>
+          <li><strong>A</strong> — Start Autoplay</li>
+          <li><strong>J</strong> — Stop Autoplay</li>
+        </ul>
+
+        <h2 class="heading-rule">
+          You can also play using the buttons on the screen.
+        </h2>
+      </div>
+    </div>
+
+    <div class="all-btn">
+      <button class="rock"><img src="./Assests/ROCK.png" alt="" /></button>
+
+      <button class="paper"><img src="./Assests/PAPER.png" alt="" /></button>
+
+      <button class="scissor">
+        <img src="./Assests/SCISSOR.png" alt="" />
+      </button>
+    </div>
+
+    <div class="all-html-container">
+      <p class="result-html"></p>
+
+      <p class="result-discription"></p>
+
+      <p class="scrore-borad"></p>
+    </div>
+
+    <div class="extra">
+      <button class="reset">RESET</button>
+      <div class="extra-inner">
+        <button class="autoplay">AUTO PLAY</button>
+        <button class="stop-autoplay">STOP AUTO PLAY</button>
+      </div>
+      <button class="history">PREVIOUS MOVES</button>
+    </div>
+
+    <div class="history-container hide">
+      <button class="close-his">+</button>
+      <ul class="all-score-his"></ul>
+    </div>
+
+    <div class="alert-dailog-box hidden">
+      <button class="close-alert-dailog-box">+</button>
+
+      <div class="alert-box-container">
+        <div class="emoji">😬</div>
+        <p class="message">
+          Are you sure to RESET score ?<br />It will also reset the previous
+          moves history.
+        </p>
+        <button class="confirm-yes">Yes</button>
+        <button class="confirm-no">No</button>
+      </div>
+    </div>
+
+    <div class="universal-alert-box hidden">
+      <div class="uni-alert-container">
+        <button class="close-uni-alert">+</button>
+
+        <div class="emoji-uni">🤔</div>
+
+        <div class="message-uni">
+          Please STOP AUTO PLAY Before selecting a MOVE
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
