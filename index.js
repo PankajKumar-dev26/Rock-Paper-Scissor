@@ -181,6 +181,8 @@ confirmYes.addEventListener("click", () => {
   localStorage.setItem("points-history", JSON.stringify(score));
   alertDailogBoxHis.classList.add("hidden");
   scroreBoard.innerHTML = `WIN : ${score.WIN}<br />LOOSE : ${score.LOOSE}<br />TIE : ${score.TIE}`;
+  resultHtml.innerHTML = "";
+  resulDiscription.innerHTML = "";
   prevoiusHis.length = 0;
   localStorage.setItem("previousHis", JSON.stringify(prevoiusHis));
   allScoreHis.innerHTML = `
@@ -229,6 +231,7 @@ closeHis.addEventListener("click", () => {
 });
 
 document.querySelector("body").addEventListener("keydown", (e) => {
+  console.log(e.key);
   if (isRunning) {
     if (e.key === "j" || e.key === "J") {
       clearInterval(intervelId);
